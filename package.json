@@ -1,0 +1,65 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "Basic React Boilerplate",
+  "main": "./dist/server.js",
+  "scripts": {
+    "build": "webpack",
+    "build-babel": "npm run build-babel-server && npm run build-babel-client",
+    "build-babel-server": "babel src/server --out-dir ./dist",
+    "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "clean": "rimraf dist node_modules",
+    "start": "env-cmd ./.env node ./dist/server.js",
+    "test": "jest ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theoutlander/react-boilerplate.git"
+  },
+  "keywords": [
+    "Node",
+    "React"
+  ],
+  "author": "Nick Karnik",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/theoutlander/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/theoutlander/react-boilerplate#readme",
+  "dependencies": {
+    "env-cmd": "^8.0.2",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fs": "0.0.1-security",
+    "grommet": "^1.11.0",
+    "jsonwebtoken": "^8.3.0",
+    "multiparty": "^4.2.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-dropzone": "^6.2.4",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
+    "node-sass": "^4.9.4",
+    "react-test-renderer": "^16.2.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./src/enzyme.setup.js",
+    "setupFiles": [
+      "raf/polyfill"
+    ]
+  }
+}
