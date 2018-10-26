@@ -2,6 +2,10 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "Basic React Boilerplate",
+  "engines": {
+    "npm": "6.4.1",
+    "node": "8.9.3"
+  },
   "main": "./dist/server.js",
   "scripts": {
     "build": "webpack",
