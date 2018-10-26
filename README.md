@@ -5,9 +5,6 @@ Upload image from server/shopping and you'll get prediction category and all the
 
 Demo story - https://github.com/Radhika231/Salesforce-Einstein-App/blob/master/REI-Einstein-Shopping-App.pptx
 
-# Problem
-At times einstein vision api returns "invalid access token" for valid tokens. In that case try again.
-
 # Install
 npm install
 
@@ -18,4 +15,8 @@ npm run start
 # Heroku URL
 https://evening-shelf-43095.herokuapp.com/
 
+# Note
+At times einstein vision api returns "invalid access token" for valid tokens (problem with my account). In that case try again.
 
+
+ 
